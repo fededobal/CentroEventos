@@ -3,7 +3,7 @@
 ## Integrantes
 * Bie, Leandro [@](https://github.com/leandrobie)
 * Castañeda, Isabella [@](https://github.com/isa-cast)
-* Dobal, Federico **.this**
+* Dobal, Federico _**.this**_
 * Villca, Facundo [@](https://github.com/EIKOO1)
 
 ## Descripción General

@@ -1,10 +1,10 @@
 # Seminario .NET - Sistema de Gestión del Centro Deportivo Universitario (Proyecto Final)
 
 ## Integrantes
-* Bie, Leandro
-* Castañeda, Isabella
-* Dobal, Federico
-* Villca, Facundo
+* Bie, Leandro [@](github.com/leandrobie)
+* Castañeda, Isabella [@](github.com/isa-cast)
+* Dobal, Federico **.this**
+* Villca, Facundo [@](github.com/EIKOO1)
 
 ## Descripción General
 Este proyecto es la versión final del **Sistema de Gestión del Centro Deportivo Universitario**. Partiendo de una base con gestión de eventos, personas y reservas, esta versión expande la funcionalidad incorporando una completa gestión de usuarios, una nueva interfaz web y persistencia de datos a través de una base de datos.

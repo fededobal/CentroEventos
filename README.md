@@ -32,11 +32,11 @@ El proyecto mantiene una Arquitectura Limpia para asegurar un bajo acoplamiento 
 ### Pasos para Ejecutar
 1.  **Clonar el repositorio**:
     ```bash
-    git clone https://github.com/fededobal/CentroEventos-FINAL-.NET.git
+    git clone https://github.com/fededobal/CentroEventos.git
     ```
 2.  **Navegar al directorio de la solución**:
     ```bash
-    cd CentroEventos-TP1-.NET/CentroEventos
+    cd CentroEventos/CentroEventos
     ```
 3.  **Navegar al proyecto de UI**:
     ```bash
@@ -46,4 +46,4 @@ El proyecto mantiene una Arquitectura Limpia para asegurar un bajo acoplamiento 
     ```bash
     dotnet run
     ```
-5.  **Abrir en el navegador**: Una vez que la aplicación esté corriendo, abre tu navegador web y ve a la dirección que se indica en la consola (generalmente `https://localhost:xxxx` o `http://localhost:xxxx`). La primera vez que se ejecute, Entity Framework creará la base de datos SQLite automáticamente gracias al code first.
+5.  **Abrir en el navegador**: Una vez que la aplicación esté corriendo, vaya a la dirección que se indica en la consola (generalmente `https://localhost:xxxx` o `http://localhost:xxxx`). La primera vez que se ejecute, Entity Framework creará la base de datos SQLite automáticamente gracias al code first.

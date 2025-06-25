@@ -46,4 +46,4 @@ El proyecto mantiene una Arquitectura Limpia para asegurar un bajo acoplamiento 
     ```bash
     dotnet run
     ```
-5.  **Abrir en el navegador**: Una vez que la aplicación esté corriendo, vaya a la dirección que se indica en la consola (generalmente `https://localhost:xxxx` o `http://localhost:xxxx`). La primera vez que se ejecute, Entity Framework creará la base de datos SQLite automáticamente gracias al code first.
+5.  **Abrir en el navegador**: Una vez que la aplicación esté corriendo, vaya a la dirección que se indica en la consola (`http://localhost:xxxx`). La primera vez que se ejecute, Entity Framework creará la base de datos SQLite automáticamente gracias al code first.

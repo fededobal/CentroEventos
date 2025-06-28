@@ -26,8 +26,8 @@ El proyecto mantiene una Arquitectura Limpia para asegurar un bajo acoplamiento 
 ## Instrucciones para Correr el Programa
 
 ### Prerrequisitos
-* Tener instalado el **SDK de .NET 8.0** - [Descarga](https://dotnet.microsoft.com/es-es/download/dotnet/8.0).
-* Tener instalado el gestor de bases de datos **SQLite** - [Descarga](https://sqlite.org/download.html).
+* SDK de **.NET 8.0** - [Descarga](https://dotnet.microsoft.com/es-es/download/dotnet/8.0).
+* Gestor de bases de datos **SQLite** - [Descarga](https://sqlite.org/download.html).
 
 ### Pasos para Ejecutar
 1.  **Clonar el repositorio**:

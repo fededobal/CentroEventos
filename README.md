@@ -1,49 +1,55 @@
-# Seminario .NET - Sistema de Gestión del Centro Deportivo Universitario (Proyecto Final)
+# .NET Seminar - University Sports Center Management System (Final Project)
 
-## Integrantes
-* Bie, Leandro [@](https://github.com/leandrobie)
-* Castañeda, Isabella [@](https://github.com/isa-cast)
-* Dobal, Federico _**.this**_
-* Villca, Facundo [@](https://github.com/EIKOO1)
+## Team Members
 
-## Descripción General
-Este proyecto es la versión final del **Sistema de Gestión del Centro Deportivo Universitario**. Partiendo de una base con gestión de eventos, personas y reservas, esta versión expande la funcionalidad incorporando una completa gestión de usuarios, una nueva interfaz web y persistencia de datos a través de una base de datos.
+  * Bie, Leandro [@](https://github.com/leandrobie)
+  * Castañeda, Isabella [@](https://github.com/isa-cast)
+  * Dobal, Federico ***.this***
+  * Villca, Facundo [@](https://github.com/EIKOO1)
 
-## Características Principales
-* **Gestión de Usuarios**: Funcionalidad completa para la gestión de usuarios del sistema, incluyendo nombre, apellido, correo y contraseña. El primer usuario registrado asume el rol de Administrador con todos los permisos. El Administrador puede delegar permisos de gestión de usuarios a otras cuentas. Los nuevos usuarios comienzan con permisos de solo lectura.
-* **Interfaz Web con Blazor**: Se desarrolló una nueva interfaz de usuario utilizando Blazor en un proyecto llamado `CentroEventos.UI`, descartando la aplicación de consola anterior.
-* **Persistencia con Entity Framework Core**: Se utiliza Entity Framework Core con una base de datos SQLite para persistir toda la información, aplicando una metodología "code first".
-* **Seguridad de Contraseñas**: Las contraseñas no se guardan en texto plano; en su lugar, se almacena un hash (utilizando SHA-256) para garantizar la seguridad.
-* **Autenticación y Sesión**: Flujo de inicio de sesión y registro de usuarios. La sesión del usuario se gestiona a través de un servicio con alcance *Scoped* en Blazor.
+## General Description
 
-## Arquitectura del Sistema
-El proyecto mantiene una Arquitectura Limpia para asegurar un bajo acoplamiento y alta cohesión entre sus componentes.
+This project is the final version of the **University Sports Center Management System**. Building upon a base with event, person, and reservation management, this version expands functionality to include comprehensive user management, a new web interface, and data persistence through a database.
 
-* **CentroEventos.Aplicacion**: El núcleo del sistema, contiene la lógica de negocio, entidades, casos de uso e interfaces.
-* **CentroEventos.Repositorios**: Capa de acceso a datos que implementa las interfaces de la aplicación utilizando Entity Framework Core y SQLite.
-* **CentroEventos.UI**: La capa de presentación, desarrollada con Blazor. Es el punto de entrada para el usuario final.
+## Key Features
 
-## Instrucciones para Correr el Programa
+  * **User Management**: Complete functionality for managing system users, including first name, last name, email, and password. The first registered user assumes the Administrator role with full permissions. The Administrator can delegate user management permissions to other accounts. New users start with read-only permissions.
+  * **Web Interface with Blazor**: A new user interface was developed using Blazor in a project called `CentroEventos.UI`, replacing the previous console application.
+  * **Persistence with Entity Framework Core**: Entity Framework Core is used with a SQLite database to persist all information, applying a "code-first" methodology.
+  * **Password Security**: Passwords are not stored in plain text; instead, a hash (using SHA-256) is stored to ensure security.
+  * **Authentication and Session**: User login and registration flow. The user session is managed through a Scoped service in Blazor.
 
-### Prerrequisitos
-* SDK de **.NET 8.0** - [Descarga](https://dotnet.microsoft.com/es-es/download/dotnet/8.0).
-* Gestor de bases de datos **SQLite** - [Descarga](https://sqlite.org/download.html).
+## System Architecture
 
-### Pasos para Ejecutar
-1.  **Clonar el repositorio**:
+The project maintains a Clean Architecture to ensure low coupling and high cohesion among its components.
+
+  * **CentroEventos.Aplicacion**: The core of the system, containing business logic, entities, use cases, and interfaces.
+  * **CentroEventos.Repositorios**: Data access layer that implements application interfaces using Entity Framework Core and SQLite.
+  * **CentroEventos.UI**: The presentation layer, developed with Blazor. It is the entry point for the end-user.
+
+## Instructions to Run the Program
+
+### Prerequisites
+
+  * **.NET 8.0** SDK - [Download](https://dotnet.microsoft.com/es-es/download/dotnet/8.0).
+  * **SQLite** Database Manager - [Download](https://sqlite.org/download.html).
+
+### Steps to Execute
+
+1.  **Clone the repository**:
     ```bash
     git clone https://github.com/fededobal/CentroEventos.git
     ```
-2.  **Navegar al directorio de la solución**:
+2.  **Navigate to the solution directory**:
     ```bash
     cd CentroEventos/CentroEventos
     ```
-3.  **Navegar al proyecto de UI**:
+3.  **Navigate to the UI project**:
     ```bash
     cd CentroEventos.UI
     ```
-4.  **Ejecutar la aplicación**:
+4.  **Run the application**:
     ```bash
     dotnet run
     ```
-5.  **Abrir en el navegador**: Una vez que la aplicación esté corriendo, vaya a la dirección que se indica en la consola (`http://localhost:xxxx`). La primera vez que se ejecute, Entity Framework creará la base de datos SQLite automáticamente gracias al code first.
+5.  **Open in browser**: Once the application is running, go to the address indicated in the console (`http://localhost:xxxx`). The first time it runs, Entity Framework will automatically create the SQLite database thanks to code first.

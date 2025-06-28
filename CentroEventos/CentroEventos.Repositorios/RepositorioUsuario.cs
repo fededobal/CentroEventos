@@ -121,6 +121,6 @@ public class RepositorioUsuario : IRepositorioUsuario
 
     public bool EsAdministrador(Usuario u)
     {
-        return ListarUsuarios().Min(us => (int?)us.Id).Equals(u.Id);
+        return ListarUsuarios().Min(user => (int?)user.Id).Equals(u.Id);
     }
 }
